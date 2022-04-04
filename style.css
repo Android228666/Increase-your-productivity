@@ -131,7 +131,26 @@ p {
 .introdaction-section {
   background-color: black;
   height: 570px;
-  background: linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
+  background: url(./images/header3.png), url(./images/header2.png), linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
+  background-repeat: no-repeat;
+  background-size: 1584px 570px;
+}
+
+.speed-svg{
+  width: 35px;
+  height: 36px;
+}
+
+.speed-container{
+  width: 92px;
+  height: 64px;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 520px;
+  top: 480px;
 }
 
 .introdaction-over-text {
@@ -781,6 +800,7 @@ p {
 .email-input {
   width: 279px;
   height: 59px;
+  padding-left: 23px;
   background: #efeff7;
   border-radius: 5px;
   border: none;
@@ -788,12 +808,20 @@ p {
 }
 
 .email-input::placeholder {
-  padding-left: 23px;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   color: #7a85ad;
 }
+
+.email-input:focus-within{
+  outline: 3px solid #6480e8;
+}
+
+/* .email-input:focus-within .email-input::placeholder{
+  color: #3a79ff;
+  transform: translate(30px);
+} */
 
 .sign-button {
   margin-top: 18px;
